@@ -1,0 +1,45 @@
+html {
+  width: 420px;
+  height: 550px;
+  padding: 5px;
+}
+
+body {
+  font-family: Roboto;
+  height: 99%;
+  width: 100%;
+  margin: 0;
+  padding-top: 50px;
+}
+
+#root {
+  height: 100%;
+  width: 100%;
+}
+
+#root, #env-list, #pages-list {
+  overflow-y: scroll;
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+  // "&::-webkit-scrollbar-track": {
+  //   backgroundColor: "grey",
+  //   borderRadius: '10%'
+  // },
+  &::-webkit-scrollbar-thumb {
+    background-color: grey;
+    border-radius: 2px;
+  }
+}
+
+.pages-list {
+  // overflow: hidden;
+  // box-shadow: inset 0 -5px 5px -5px rgba(0,0,0,0.5), inset 0 5px 5px -5px rgba(0,0,0,0.5);
+  border-top: solid 2px grey;
+  border-bottom: solid 2px grey;
+  border-radius: 3%;
+  height: 177px;
+  overflow-y: scroll;
+  padding-top: 0px;
+  // margin-bottom: 20px;
+}

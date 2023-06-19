@@ -1,0 +1,52 @@
+{
+  "manifest_version": 3,
+  "key" :"MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAmTy9ZA+S5TqjIh1m9NwmWFtxZR/h2OA0jkaz1mviWV8dfC4wxfxYhx8lg78l1zH08mlux8MeL/4DYU6mUgIvVfl7vnp+vCPzUunmIJ0kGJjQFCA12Glfyfg0vAC4WbXyrxYzAdiXzLaoHmQtd+L/POXtYiO+y/a8QoWKqKAr9FY5hTdJUjF1hmNSOaUh+D32/x+h2YzOSkNPM6O+qLRAvvNHS4fcZD4L+nqykYbh1xwbf9E/zZE3ECrJKvVDbsMagYiRS6wpex3YTdtmMPu607KJrcOEIbgZBF0g9Y0r7y1mGxIwcBZy0mWLG6BYL2M+N+xGzPIVpF02XPdAO2SDQwIDAQAB",
+  "version": "0.1.12",
+  "name": "B&H Site Tools",
+  "description": "Various tools for the the B&H website",
+  "action": {
+    "default_popup": "index.html",
+    "default_title": "B&H Site Tools"
+  },
+  "permissions": [
+    "cookies",
+    "tabs",
+    "storage",
+    "downloads",
+    "contextMenus",
+    "browsingData",
+    "scripting"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "icons": {
+    "128": "logo128.png"
+  },
+  "commands": {
+    "_execute_action": {
+      "suggested_key": {
+        "default": "Alt+Z"
+      }
+    },
+    "duplicate-tab": {
+      "suggested_key": "Alt+Shift+D",
+      "description": "Duplicate tab"
+    },
+    "pin-tab": {
+      "suggested_key": "Alt+Shift+Z",
+      "description": "Pin tab"
+    },
+    "go-incognito": {
+      "suggested_key": "Alt+Shift+N",
+      "description": "Open tab in incognito"
+    },
+    "expand-collapse-tools": {
+      "description": "Expand/collapse tools"
+    }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "incognito": "split"
+}
